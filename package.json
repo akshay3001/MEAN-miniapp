@@ -1,0 +1,20 @@
+{
+  "name": "mean-app",
+  "version": "1.0.0",
+  "description": "This app is build using MEAN Stack, i.e by using MongoDB, Expressjs, AngularJS, Nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "MEAN",
+    "Stack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.3"
+  }
+}
