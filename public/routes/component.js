@@ -1,8 +1,10 @@
 angular.module('app')
   .component('home', {
-    templateUrl: '../views/home.html',
+    templateUrl: './views/home.html',
+    // template : '<h1>Hello</h1>',
     controller: 'util'
   })
-  .component('list', {
-    templateUrl: '../views/list.html'
+  .component('signUp', {
+    templateUrl: './views/signUp.html',
+    controller: 'signUp'
   });

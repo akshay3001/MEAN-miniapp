@@ -1,0 +1,51 @@
+<div class="signup__container">
+  <div class="container__child signup__thumbnail">
+    <div class="thumbnail__logo">
+    </div>
+    <div class="thumbnail__content text-center">
+      <h1 class="heading--primary">Welcome to "Video Channel"</h1>
+      <h2 class="heading--secondary">your hotel moto</h2>
+    </div>
+    <div class="thumbnail__links">
+      <ul class="list-inline m-b-0 text-center">
+        <li><a href="http://alexdevero.com/" target="_blank"><i class="fa fa-globe"></i></a></li>
+        <li>
+          <a href="https://www.behance.net" target="_blank">
+            <fa class="fa fa-behance"></fa>
+          </a>
+        </li>
+        <li><a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
+    <div class="signup__overlay"></div>
+  </div>
+  <div class="container__child signup__form">
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input class="form-control" type="text" ng-model="signUpData.name" name="name" id="name" placeholder="Please enter your name" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" type="password" ng-model="signUpData.password" name="password" id="password" placeholder="********" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control" type="text" ng-model="signUpData.email" name="email" id="email" placeholder="example@abc.com" required />
+      </div>
+      <div class="form-group">
+        <label for="passwordRepeat">Phone Number</label>
+        <input class="form-control" type="text" ng-model="signUpData.phone" name="phoneNumber" id="phoneNumber" placeholder="0123456789" />
+      </div>
+      <div class="m-t-lg">
+        <ul class="list-inline">
+          <li>
+            <button class="btn btn--form" ng-click="signUp()">Register</button>
+
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>

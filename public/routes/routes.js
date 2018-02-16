@@ -2,13 +2,13 @@ angular.module('app')
   .value('$routerRootComponent', 'app')
   .component('app', {
     template: '<ng-outlet></ng-outlet>',
-    $routeConfig: [
+    $routeConfig: [{
+        path: '/',
+        component: 'home'
+      },
       {
-      path: '/',
-      component: 'home'
-    },
-    {
-      path: '/list',
-      component: 'list'
-    }]
+        path: '/signUp',
+        component: 'signUp'
+      }
+    ]
   });

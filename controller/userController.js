@@ -11,7 +11,8 @@ router.post('/', function (req, res) {
     User.create({
             name: req.body.name,
             password: req.body.password,
-            email: req.body.email
+            email: req.body.email,
+            phone: req.body.phone
         },
 
         function (err, user) {
