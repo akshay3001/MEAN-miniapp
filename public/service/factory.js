@@ -3,11 +3,12 @@ angular.module('app')
  var signUpData = {};
 
 signUpData.credentials = function(reqObj) {
+  alert('Entered into service')
   console.log("user created")
   return $http({
     method: 'POST',
     url: 'http://localhost:3002/users',
-    data: 'reqObj'
+    data: {User: reqObj}
   })
 };
 
