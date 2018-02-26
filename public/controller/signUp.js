@@ -10,8 +10,12 @@ angular.module('app')
     }
 
     $scope.signUp = function () {
+      //debugger
       serviceCalls.credentials($scope.User).then(function (res) {
+        //debugger
         $scope.data = res.data;
+
+        //debugger
         console.log('data:', $scope.data);
       });
 

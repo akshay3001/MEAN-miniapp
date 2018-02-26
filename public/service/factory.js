@@ -8,7 +8,7 @@ signUpData.credentials = function(reqObj) {
   return $http({
     method: 'POST',
     url: 'http://localhost:3002/users',
-    data: {User: reqObj}
+    data: reqObj
   })
 };
 
