@@ -1,4 +1,5 @@
 // CREATES A NEW USER
+
 var express = require('express');
 var router = express.Router();
 var User = require('../model/user');
@@ -8,7 +9,7 @@ router.use(bodyParser.urlencoded({
 }));
 
 
-router.post('/', function(req, res) {
+router.post('/', function (req, res) {
   //console.log("user creation started");
   User.create({
       name: req.body.name,
@@ -18,24 +19,24 @@ router.post('/', function(req, res) {
     },
 
     function (err, user) {
-      if (err) return res.status(500).send("There was a problem adding the information to the database.")
+      if (err) return res.status(500)
+      .send('There was a problem adding the information to the database.');
+
       else {
-        console.log('User created with 400 status code', user);
-        return res.json(user);
-        // if (res.status(200){
-        //
-        // })
-
+        res.status(200).send(user);
       }
-
     });
+
   //console.log('User created successfully');
+
 });
+
 // RETURNS ALL THE USERS IN THE DATABASE
-router.get('/', function(req, res) {
-  User.find({}, function(err, users) {
-    if (err) return res.status(500).send("There was a problem finding the users.");
-    res.json(users);
+router.get('/', function (req, res) {
+  User.find({}, function (err, users) {
+    if (err) return res.status(500).send('There was a problem finding the users.');
+    res.send(users);
   });
 });
+
 module.exports = router;

@@ -14,6 +14,8 @@ angular.module('app')
       serviceCalls.credentials($scope.User).then(function (res) {
         //debugger
         $scope.data = res.data;
+        $scope.configData= res.config.data;
+        console.log($scope.configData);
 
         //debugger
         console.log('data:', $scope.data);
